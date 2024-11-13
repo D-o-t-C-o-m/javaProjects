@@ -11,6 +11,8 @@ public class blackJack {
     static String deck() {
         //TODO Find a better method for building this array
         String[] deck = {"2♠", "3♠", "4♠", "5♠", "6♠", "7♠", "8♠", "9♠", "10♠", "J♠", "Q♠", "K♠", "A♠", "2♥", "3♥", "4♥", "5♥", "6♥", "7♥", "8♥", "9♥", "10♥", "J♥", "Q♥", "K♥", "A♥", "2♦", "3♦", "4♦", "5♦", "6♦", "7♦", "8♦", "9♦", "10♦", "J♦", "Q♦", "K♦", "A♦", "2♣", "3♣", "4♣", "5♣", "6♣", "7♣", "8♣", "9♣", "10♣", "J♣", "Q♣", "K♣", "A♣"};
+        //implement a second 0-51 array using the pattern above to assign points? [2,3,4,5,6,7,8,9,10,10,10,11]x4? 
+        //what happens to point array when I draw
         Random random = new Random();
         int index = random.nextInt(deck.length);
         return (deck[index]);
@@ -92,13 +94,11 @@ public class blackJack {
                     System.out.println("That's too bad, that leaves you with $" + bank + " in the bank");
                     System.out.println("");
                     System.out.println("Would you like to play again? Y/N: ");
-                    //         }
+                   
                 } 
             }
             
         }
     }
 }
-//        }
-//  }
-//}
+
